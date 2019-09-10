@@ -31,7 +31,7 @@ func formatRequest(r *http.Request) string {
 		request = append(request, r.Form.Encode())
 	}
 	// Return the request as a string
-	return strings.Join(request, "\n")
+	return strings.Join(request, "\n") + "\n"
 }
 
 type mainHandler struct{}
